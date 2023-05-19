@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Positions</title>
+</head>
+<style>
+    /* css position static, absolute, relative, fixed, sticky */
+    .box{
+        border: 2px solid red;
+        background-color: pink;
+        margin: 4px 4px;
+        padding: 4px 4px;
+        height: 4px;
+        width: 150px;
+        height: 150px;
+        display: inline-block;
+    }
+    .container{
+        border: 2px solid red;
+        background-color: pink;
+        height: 1000px;
+    }
+    #box3{
+        /* box moved from its current position and left few space  */
+        /* box moved from parent if we use absolute */
+        /* position: absolute;         */
+        /* by using fix position box cannot lave its position */
+        /* position: fixed;
+        right: 100px; */
+        /* top: 50px;
+        left: 134px; */
+        /* By using sticky position the box cannot leave its place and moved with the website page by holding its old position**/
+        position: fixed;
+        top: 3px;
+    }
+</style>
+<body>
+</body>
+<div class="container">
+    <div class="box" id="box1">1</div>
+    <div class="box" id="box2">2</div>
+    <div class="box" id="box3">3</div>
+    <div class="box" id="box4">4</div>
+
+</div>
+    
+    
+</body>
+</html>

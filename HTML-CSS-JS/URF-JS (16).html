@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Working with JSON in JavaScript </title>
+</head>
+<body>
+    <h1>Working with JSON in JavaScript </h1>
+    <script>
+        let jasonobj={
+            name:"Usama",
+            age:18,
+            food:"Apple",
+            Fb:"Usama Rehan Farooqi"
+        }
+        console.log(jasonobj);
+        //Converting this object into string
+        let myobj=JSON.stringify(jasonobj);
+        console.log(myobj);
+        let myobj1=myobj.replace("Usama","Rehan");
+        console.log(myobj1);
+        let myobj2=JSON.parse(myobj1);
+        console.log(myobj2);
+    </script>
+    
+</body>
+</html>

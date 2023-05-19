@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flex box </title>
+</head>
+<style>
+    .container{
+        height: 700px;
+        width: 100%;
+        border: 2px solid black;
+        display: flex;
+        /* flex properties for flex container */
+        /* flex-direction: row; */
+        /* flex-direction: column; */
+        /* flex-direction: row-reverse; */
+        /* flex-direction: column-reverse; */
+        /* flex-wrap: wrap; */
+        /* use for responsive layouts */
+        /* flex-wrap: wrap-reverse; */
+        /* flex-flow: row-reverse wrap; use for both properties at a time */
+        /* justify-content: center; */
+        /* use for aligning boxes center */
+        /* justify-content: space-between; it is used for some space between boxes */
+        /* justify-content: space-evenly; it is used for equal space between boxes */
+        /* align-items: center; place all the boxes vertically center */
+        /* align-items: flex-end; place all the boxes vertcally down */
+        /* align-items: stretch; all boxes creates equal spaces between them whenever the screen size became small */
+
+    }
+    .item{
+        background-color: pink;
+        border: 2px solid blue;
+        margin: 4px 4px;
+        padding: 4px 4px;
+        width: 150px;
+        height: 200px;
+    }
+    #item1{
+        /* The box having highest order placed at the last */
+        order: 2;
+        /* flex-grow: 2; */
+        /* higher the flex grow number higher will be the growth of box as compared to lower one */
+
+        
+    }
+    #item2{
+        /* order: 1; */
+        /* flex-grow: 4; */
+        /* flex shriink work same as flex grow */
+        flex-basis:320px;
+        /* when flex direction is set to row it control the width of box 
+        and when flex direction is set to colum it control the heigth of box */
+
+    }
+    #item3{
+        /* flex: 2 2 400px;  just flex use for flex grow shrink and bases at a time   */
+        align-self: center;
+        align-self: flex-end;
+        align-self: flex-start;
+        /* This three properties use for aligning boxes singly */
+
+    }
+</style>
+<body>
+    <h3><strong>This is flex box tutorial</strong></h3>
+    <div class="container">
+        <div class="item" id="item1">First box</div>
+        <div class="item" id="item2">Second box</div>
+        <div class="item" id="item3">Third box</div>
+        <div class="item" id="item4">Fourth box</div>
+        <div class="item" id="item5">Fifth box</div>
+        <div class="item" id="item6">Sixth box</div>
+    </div>
+</body>
+</html>

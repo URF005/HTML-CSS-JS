@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Before and After pseudo Selector</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <style>
+    body {
+      background-color:black;
+      color: white;
+      margin: 0px;
+      padding: 0px;
+    }
+    section::before {
+      background: url(Uxama.jpg) no-repeat center center/cover;
+      content: "";
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      z-index: -1;
+      top: 0%;
+      opacity: 0.1;
+    }
+    section {
+      display: flex;
+      flex-direction: column;
+      margin: 3px 23px;
+      text-align: center;
+      height: 300px;
+      justify-content: center;
+      font-family: "Pacifico", cursive;
+      flex-wrap: wrap;
+    }
+
+    .navigation {
+      display: flex;
+      font-size: 20px;
+    }
+
+    li {
+      list-style: none;
+      padding: 34px 23px;
+    }
+
+    h1 {
+      font-size: 2rem;
+    }
+
+    /* section::before{
+        content: "This is before Pseudo selector";
+    }
+    section::after{
+        content: "This is after pseudo selector";
+    } */
+  </style>
+
+  <body>
+    <header>
+      <nav class="navbar">
+        <ul class="navigation">
+          <li class="item">Home</li>
+          <li class="item">About</li>
+          <li class="item">Services</li>
+          <li class="item">Contact Us</li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <h1>Welcome to my website</h1>
+      <p>
+        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Possimus
+        explicabo rem sunt voluptate deserunt alias, impedit dolorum non
+        expedita excepturi sed! Accusantium distinctio totam molestiae delectus
+        ducimus aliquid perspiciatis culpa. Qui tenetur similique tempore.
+      </p>
+    </section>
+  </body>
+</html>

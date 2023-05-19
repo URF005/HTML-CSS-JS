@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Functions</title>
+</head>
+<body>
+    <div class="container">
+    <h1>JavaScript Functions</h1>
+    </div>
+    <script>
+        //This synatx is so lengthy we have to write again and again to print same thing.
+        let name="Usama";
+        let name1="Rehan";
+        let name2="Farooqi";
+        let msg="Good morning"
+        console.log(name+" is a good boy");
+        console.log(name1+" is a good boy");
+        console.log(name2+" is a good boy");
+
+        //Now we make function to make it simple
+        console.log("Output after making functions");
+
+        function greet(name,msg="Good evening "){
+            console.log(msg+name);
+            console.log(name+" is a good boy");
+        }
+        greet(name,msg);
+        greet(name1,msg);
+        // If we dont pass the argument than the function takes the default set value
+        greet(name2);
+        //Return a value from function
+        function sum(a,b,c)
+        {
+            let d=a+b+c;
+            return d;
+
+        }
+        let returnvalue=sum(1,2,3);
+        console.log("Sum of number is", returnvalue);
+        
+
+        
+    </script>
+    
+</body>
+</html>

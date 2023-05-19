@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid media qureies</title>
+</head>
+<style>
+    .container {
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas:
+            'navbar navbar navbar navbar'
+            'section section section aside'
+            'footer footer footer footer';
+    }
+
+    .br {
+        background-color: skyblue;
+        border: 2px solid blue;
+        padding: 10px 23px;
+    }
+
+    @media(max-width:300px) {
+        body {
+            background-color: yellow;
+        }
+    }
+
+    @media(min-width:300px) and (max-width:500px) {
+        body {
+
+            background-color: pink;
+        }
+
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+        }
+
+        aside {
+            display: none;
+        }
+
+    }
+
+    @media(min-width:500px) and (max-width:600px) {
+        body {
+
+            background-color: skyblue;
+        }
+
+        .container {
+            grid-template-areas:
+                'navbar navbar navbar navbar'
+                'section section section section'
+                'aside aside aside aside'
+                'footer footer footer footer';
+        }
+
+    }
+
+    @media(min-width:600px) and (max-width:1300px) {
+        body {
+
+            background-color: violet;
+        }
+
+
+    }
+
+    nav {
+        grid-area: navbar;
+
+    }
+
+    section {
+        grid-area: section;
+
+    }
+
+    aside {
+        grid-area: aside;
+
+    }
+
+    footer {
+        
+        grid-area: footer;
+        text-align: center;
+
+    }
+</style>
+
+<body>
+    <div class="container">
+        <nav class="br">
+            Home Services Contact US
+        </nav>
+        <section class="br">
+            Learn CSS in English
+        </section>
+        <aside class="br">
+            More about us
+        </aside>
+        <footer class="br">
+            copyright &copy;
+        </footer>
+
+    </div>
+
+
+</body>
+
+</html>

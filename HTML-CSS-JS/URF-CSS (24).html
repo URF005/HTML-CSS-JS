@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS GRID</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        /* This property makes 3 colums with space of 400 200 200 */
+        /* grid-template-columns:400px 200px 200px ;  */
+        /* grid-template-columns: 200px auto 200px; */
+        /* grid-template-columns: 1fr 4fr 1fr; */
+        grid-template-columns: repeat(3,auto);
+        grid-gap: 3rem;
+        padding: 12px 12px;
+    }
+    .item{
+        background-color: pink;
+        margin: 3px;
+        border: 2px solid black;
+    }
+
+</style>
+<body>
+    <div class="container">
+        <dive class="item">This is item-1</dive>
+        <dive class="item">This is item-2</dive>
+        <dive class="item">This is item-3</dive>
+        <dive class="item">This is item-4</dive>
+        <dive class="item">This is item-5</dive>
+        <dive class="item">This is item-6</dive>
+        <dive class="item">This is item-7</dive>
+        <dive class="item">This is item-8</dive>
+        <dive class="item">This is item-9</dive>
+        <dive class="item">This is item-10</dive>
+        <dive class="item">This is item-11</dive>
+    </div>
+    
+</body>
+</html>

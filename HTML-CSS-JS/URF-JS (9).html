@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>for, while, forEach, Do While Loops</title>
+</head>
+<body>
+    <div class="container">
+        <h1>for, while, forEach, Do While Loops</h1>
+    </div>
+    <script>
+        //Simple For loop
+        let i;
+        for(i=0;i<2;i++)
+        {
+            console.log(i);
+        }
+        //For loop for iterrating an array
+        let name=new Array("Usama","Rehan","Farooqi");
+        for (let index = 0; index < name.length; index++) {
+            console.log("Hello "+ name[index]);
+            
+        }
+        //Modren JS
+        name.forEach(function f(element) {
+            console.log("Hiii "+element);
+
+        });
+        for(element of name){
+            console.log("Salam "+element);
+            
+        }
+        //Iteration of objects
+        let employee={
+            name:"Usama",
+            sallery:"1200",
+        }
+        for(key in employee){
+            console.log(key,"of employee is",employee[key]);
+        
+        }
+        //While loop
+        let a=0;
+        while(a<4){
+            console.log(`${a} is less than 4`);
+            a++;
+
+        }
+        //Do while loop
+        let b=5;
+        do{
+            console.log(`${b} is not equal to 0`);
+            b--;
+        }while(b!=0);
+    
+        
+   
+    </script>
+    
+</body>
+</html>

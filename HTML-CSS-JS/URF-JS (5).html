@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scope, if-else statement, switch cases</title>
+</head>
+<body>
+    <div class="container">
+        <h1>Java Script Tutorial</h1>
+        <div>
+            <ul>
+                <li>item-1</li>
+                <li>item-2</li>
+                <li>item-3</li>
+                <li>item-4</li>
+                <li>item-5</li>
+                <li>item-6</li>
+                <li>item-7</li>
+            </ul>
+        </div>
+    </div>
+    <script>
+        var str1='This is a string';
+        var str1='This is another string';
+        console.log(str1);
+        //Now we use let instead of var because let dont allow variable redeclaration
+        let a='variable 1'
+        {
+            let a='variable 2'
+            console.log(a);
+        }
+        console.log(a);
+        // constant cant be changed
+        const b='Cant chnaged'
+        // b='changed'; Through an error
+        console.log(b);
+
+
+        // If-Else statements
+        let age=2;
+        if(age>18)
+        {
+            console.log('You can drink');
+        }
+        else if(age==2){
+            console.log('Anda sa to nikl ja')
+            
+        }
+        else{
+            console.log('you cant drink')
+        }
+
+        //Switch Cases
+        let cups=2;
+        switch (cups) {
+            case 1:
+                console.log('Value of cup is 1')
+                break;
+            case 2:
+                console.log('Value of cup is 2')
+                break;
+        
+            default:
+                console.log('Value of cup is not 1 not 2');
+                break;
+        }
+        
+       
+    </script>
+    
+</body>
+</html>

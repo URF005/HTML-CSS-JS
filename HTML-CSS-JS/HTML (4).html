@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forms and Input tags</title>
+</head>
+
+<body>
+    <h1>This is my HTML form</h1>
+    <form action="baclend.php" method="post">
+        <label for="name">Name:</label>
+
+        <div>
+            <input type="text" name="myname" id="name">
+
+        </div>
+        <br>
+        <label for="rollno">RollNo:</label>
+        <div>
+            <input type="number" name="mynumber1" id="rollno">
+
+        </div>
+        <br>
+        <label for="Email">Email: </label>
+        <div>
+            <input type="email" name="myemail" id="Email">
+
+        </div>
+        <br>
+        <div>
+            Date: <input type="date" name="mydate">
+
+        </div>
+        <br>
+
+        <div>
+            Bonus: <input type="number" name="=mynumber2">
+
+        </div>
+        <br>
+        <div>
+            Are you 18 plus?: <input type="checkbox" name="=my eligibility">
+
+        </div>
+        <br>
+        <div>
+            Gender?: Male <input type="radio" name="mygender" checked> Female <input type="radio" name="=mygender">
+
+        </div>
+        <br>
+        <div>
+            Submit Please: <input type="submit" value="Submit">
+        </div>
+        <br>
+        <div>
+            Reset:<input type="reset" value="Reset">
+        </div>
+        <br>
+        <div>
+            Write about yourself: <br> <textarea name="" id="" cols="30" rows="10"></textarea>
+        </div>
+        <br>
+        <div>
+           <input type="month" name="Months">
+        </div>
+        <br>
+        <div>
+            <label for="car">Select the car</label>
+            <select name="Select the car" id="car">
+                <option value="NILL" selected>NILL </option>
+                <option value="Honda">honda</option>
+                <option value="Suzuki">Suzuki</option>
+
+            </select>
+
+        </div>
+        <br>
+
+    </form>
+
+</body>
+
+</html>

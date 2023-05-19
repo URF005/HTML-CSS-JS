@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS grid tempelate area</title>
+</head>
+<style>
+    .container{
+        display: grid;
+        grid-gap: 1rem;
+        grid-template-areas: 
+        'navbar navbar navbar navbar'
+        'section section section aside'
+        'footer footer footer footer';
+
+    }
+    .box{
+        background-color: pink;
+        /* border: 2px solid black; */
+        padding: 34px;
+        
+
+    }
+    #navbar{
+        grid-area: navbar;
+
+    }
+    #section{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        grid-area: section;
+
+    }
+    #aside{
+        grid-area: aside;
+
+    }
+    #footer{
+        grid-area: footer;
+
+    }
+</style>
+<body>
+    <div class="container">
+        <div id="navbar" class="box">
+            Home Services Contact Us
+        </div>
+        <div id="section" class="box">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Voluptas, sequi? Molestias commodi debitis quos iure possimus magnam molestiae corporis totam. Assumenda provident officia, totam corrupti fuga, eligendi qui corporis, doloremque magni veniam natus? Ratione vero hic sunt eaque laborum, illo nostrum ullam. Fuga sed expedita praesentium odio, in consequatur nam unde quasi facilis earum aliquid officiis eligendi nemo officia modi vel deleniti optio vero reprehenderit non! Ipsa quod minus ad sequi? Earum consequatur ipsa tenetur nobis tempore, rerum cum iure omnis. Culpa harum voluptate maxime vero eum fuga commodi eaque magnam minus, alias beatae itaque aliquam, sint facere, porro ut error quos possimus. Suscipit possimus atque, vel illo velit dolore alias, dolor porro ipsum consequuntur, sunt sit? Dolorum consectetur perferendis commodi ex deserunt asperiores! Optio eos odio fugit dolor aperiam a ut ratione, cupiditate veniam repudiandae, ullam ea amet quis officiis laboriosam debitis eum, ipsam autem soluta vero. Quaerat ad esse minima veniam. Iusto, animi illum quae nam corporis, ducimus culpa repudiandae et aperiam ex, non deleniti. Necessitatibus eligendi est ipsa sequi doloremque obcaecati tempore voluptates amet, officia earum assumenda molestias maxime iure, consequatur laboriosam! Sapiente a eius quam quisquam? Dignissimos nostrum dolore vitae fugiat amet rerum, laboriosam adipisci hic quisquam fugit aliquam quae excepturi autem, voluptatem ipsam soluta minus at ullam libero tenetur impedit quos. Inventore ea, facilis provident magni laborum adipisci eos voluptatem vero quam, rem animi possimus, quod tenetur quae nesciunt a neque distinctio in. Ea sequi impedit explicabo laboriosam eos illum quos perspiciatis ipsam reiciendis repellendus distinctio at, fugit saepe doloribus. Fugit repellendus sunt magni in quisquam at odit, distinctio dolore cum dicta. Esse ut quae eos temporibus labore distinctio modi, aut maxime et dolores error, id obcaecati, molestias quo quam sequi cupiditate veritatis laborum consequatur. Ex quidem, asperiores aut fuga nulla maiores nisi ut ea!
+        </div>
+        <div id="aside" class="box">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt nemo deserunt eaque placeat unde autem, sint repudiandae, cumque accusantium assumenda modi? Sunt fuga magnam delectus esse maiores deleniti odio, vel beatae fugit quisquam omnis? Incidunt rem tenetur praesentium non pariatur, modi omnis hic rerum exercitationem excepturi a qui voluptatibus ad nihil laborum velit adipisci consectetur eum deleniti nemo voluptatum accusamus saepe laudantium. Voluptas inventore facilis qui libero porro mollitia quaerat? Aliquam sequi veritatis eum voluptatum dolor omnis obcaecati ex, velit ab odit consequatur ea. Veniam architecto in sint ipsam, numquam nemo iusto sed rem aspernatur necessitatibus distinctio voluptas quisquam iure iste quaerat illum dolorum illo aut fugit. Repudiandae similique assumenda amet maxime officiis impedit laboriosam magni quia tenetur culpa. Corporis libero doloribus culpa nam odit iusto. Totam commodi officiis tempora exercitationem vero doloribus adipisci error pariatur esse eius placeat sunt quod cumque, suscipit sit consequatur aut temporibus est? Eaque exercitationem odio optio neque itaque enim soluta cumque maxime fuga nam, aliquam molestiae corporis deleniti quibusdam ad dicta? Officia illum tenetur reprehenderit adipisci, eveniet beatae. Eius quos explicabo, vero at voluptatibus ipsa aspernatur culpa similique laboriosam quia deserunt. Iure adipisci provident libero unde repellendus, sunt quam, sit obcaecati quia, alias necessitatibus.
+        </div>
+        <div id="footer" class="box">
+            This is footer
+        </div>
+        <!-- <div class="box">This is box 1</div>
+        <div class="box">This is box 2</div>
+        <div class="box">This is box 3</div>
+        <div class="box">This is box 4</div>
+        <div class="box">This is box 5</div>
+        <div class="box">This is box 6</div>
+        <div class="box">This is box 7</div>
+        <div class="box">This is box 8</div>
+        <div class="box">This is box 9</div>
+        <div class="box">This is box 10</div>
+        <div class="box">This is box 11</div>
+        <div class="box">This is box 12</div>
+        <div class="box">This is box 13</div>
+        <div class="box">This is box 14</div> -->
+    </div>
+    
+</body>
+</html>

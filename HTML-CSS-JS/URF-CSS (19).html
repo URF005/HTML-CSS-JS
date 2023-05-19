@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Shadwo and Text shadow</title>
+</head>
+<style>
+    .container {
+        display: flex;
+
+    }
+
+    .card {
+        /* border: 2px solid red; */
+        margin: 18px 4px;
+        padding: 23px 45px;
+        background-color: pink;
+        box-shadow: 2px 2px  black;
+        /* box-shadow: -2px -2px black; it can reverse the shadow effect */
+        /* box-shadow: 5px 5px 10px black; this property is use to blur the shadow */
+        /* box-shadow: 5px 5px 10px 10px black; this property spread the shadow */
+        /* box-shadow: inset 2px 2px black; this property increase shadow effect inside the box */
+        /* box-shadow: 2px 2px black , 2px 2px red; this property is used to apply multiple shadow effects */
+    }
+    .card h2{
+        /* text shadow properties same as box shadwow */
+        /* text-shadow:2px 2px white ; */
+        text-shadow:2px 2px 3px white ;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="card" id="card1">
+            <h2>This is C++ course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus unde cum sed officia reiciendis rem eos corrupti repellat consectetur sapiente.</p>
+
+        </div>
+        <div class="card" id="card2">
+            <h2>This is html course</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus unde cum sed officia reiciendis rem eos corrupti repellat consectetur sapiente.</p>
+        </div>
+        <div class="card" id="card3">
+            <h2>card3</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus unde cum sed officia reiciendis rem eos corrupti repellat consectetur sapiente.</p>
+        </div>
+    </div>
+
+</body>
+
+</html>

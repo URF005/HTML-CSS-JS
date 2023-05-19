@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation and keyframes</title>
+</head>
+<style>
+    .container{
+        background-color: yellow;
+    }
+    .box{
+        background-color: pink;
+        width: 250px;
+        height: 250px;
+        position: relative;
+        animation-name: urf2;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+        /* animation-fill-mode: forwards; this property stop the animation  when reach the applied width */
+        /* animation-fill-mode: alternate; in this property animation reached to the apllied width and move back to its orignal position */
+        /* animation-timing-function: ease-out;this property use for the moment slow to fast */
+        /* animation-timing-function: ease-in; this property use for the moment fast to slow */
+        /* animation-delay: 3s;this property use to stop animation for 3 seconds */
+        /* animation-direction:reverse ; animation move opposite */
+
+
+    }
+    /* syntax 2 */
+    @keyframes urf2 {
+        0%{
+            top: 0px;
+            left: 0px;
+
+        }
+        25%{
+            top: 400px;
+            left: 0px;
+        
+            
+
+        }
+        75%{
+            top: 400px;
+            left: 800px;
+
+
+        }
+        100%{
+            top: 0px;
+            left: 800px;
+
+        }
+        
+    }
+
+    @keyframes urf1 {
+        from{
+            width: 50px;
+        }
+        to{
+            width: 800px;
+        }
+        
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="box">
+            This is box
+        </div>
+    </div>
+</body>
+</html>

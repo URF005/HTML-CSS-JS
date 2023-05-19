@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Css selector</title>
+    <style>
+        #pink {
+            background-color: pink;
+            color: brown;
+        }
+
+        #red {
+            color: blue;
+        }
+
+        .red1 {
+            background-color: yellow;
+        }
+
+        /* Grouping is applied below */
+        span,
+        footer {
+            background-color:skyblue;
+        }
+
+        #div1 {
+            background-color: whitesmoke;
+            border: 2px solid blue;
+        }
+
+        #blue {
+            color: blue;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <h3>CSS SELECTORS</h3>
+    <!-- By giving id only this line turns pink -->
+    <!-- Without id all p tags turns pink -->
+    <p id="pink">This is our first line</p>
+    <!-- Now applying css by using class -->
+    <p id="red" class="red1">This is our 2nd line</p>
+    <div id="div1">
+        <p id="blue">This is our third</p>
+        <span>This is span</span>
+    </div>
+    <footer>
+        This is footer
+    </footer>
+
+</body>
+
+</html>

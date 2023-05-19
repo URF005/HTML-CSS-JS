@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Model</title>
+    <style>
+        body{
+            background-color: #22281b;
+        }
+        /* *{
+            background-color: skyblue;
+        } This syntax used for overall changing in selectors*/
+        .container {
+            
+            background-color: pink !important;
+            border: 4px solid blue;
+            /* padding: 50px; */
+            margin: 50px;
+            padding: 30px 40px 65px 76px;
+            box-sizing: border-box;
+            height: 300px;
+            width: 500px;
+
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h3>This is Ist heading</h3>
+        <p id="c1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur excepturi neque, repellat
+            repudiandae, minima iusto officia debitis quo vitae nemo cupiditate dolor quia nostrum eaque libero, error
+            quasi placeat a.</p>
+    </div>
+    <div class="container">
+        <h3>This is 2nd heading</h3>
+        <p id="c2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur excepturi neque, repellat
+            repudiandae, minima iusto officia debitis quo vitae nemo cupiditate dolor quia nostrum eaque libero, error
+            quasi placeat a.</p>
+    </div>
+    <div class="container">
+        <h3>This is 3rd heading</h3>
+        <p id="c3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Consequatur excepturi neque, repellat
+            repudiandae, minima iusto officia debitis quo vitae nemo cupiditate dolor quia nostrum eaque libero, error
+            quasi placeat a.</p>
+    </div>
+
+</body>
+
+</html>

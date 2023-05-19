@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SetInterval & setTimeOut</title>
+</head>
+<style>
+    #time{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: blue;
+        color: white;
+        margin: 34px;
+        padding: 34px;
+        font-size: 40px;
+        font-weight: bold;
+    }
+</style>
+<body>
+    <h1>setInterval & setTimeOut</h1>
+    <div class="container">
+        <span id="time"></span>
+    </div>
+    <!-- Settimeout allow us to run the function after the interval of time -->
+    <!-- Cleartimeout allow us to run the function repeatdly after an interval of time -->
+    <script>
+        function greet(name){
+            console.log("Good morning "+name);
+        }
+        // setTimeout(greet,5000,"Usama");
+        // timeOut=setTimeout(greet,5000,"Usama");
+        // console.log(timeOut);
+        // clearTimeout(timeOut);
+        // clearTimeout cancel the time interval
+
+        // Set interval
+        // CI=setInterval(greet,1000,"Rehan");
+        // setInterval(CI);
+
+        // clearInterval command clear the set time intervals
+
+        // Clock representation by using setInterval
+        // function display(){
+        //     time=new Date();
+        //     console.log(time);
+        //     document.getElementById('time').innerHTML=time;
+        // }
+        // setInterval(display,1000);
+
+    </script>
+    
+</body>
+</html>
